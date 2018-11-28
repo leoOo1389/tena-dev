@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+<head>
+<title>TENA</title>
+<vtex:template id="head-sanders" />
+</head>
+<body>
+	<vtex:template id="header-sanders" />
+	<div class="row">
+		<div class="banner">		
+	        <vtex:contentPlaceHolder id="mainFullBanner" />
+	        <div class="container texto-banner">
+	        	 <vtex:contentPlaceHolder id="textobanner" />
+	        </div>
+		</div>
+	</div>
+	<main>
+        <div class="row content">
+        	<div class="container">
+        		
+                <vtex.cmc:orderList/>
+
+        	</div>
+        </div>
+	</main>
+    <vtex:template id="footer-sanders" />
+
+    <link href="/arquivos/reset_bootstrap.css" rel="stylesheet" type="text/css" />
+    
+    <script>
+        $(window).load(function() {
+            $("LINK[href*='bootstrap.min.css']").remove();
+            $("LINK[href*='style/style.css']").remove();
+        });
+    </script>
+    
+</body>
+</html>

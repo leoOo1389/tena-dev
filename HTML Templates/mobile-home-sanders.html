@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+<head>
+<vtex:template id="mobile-head-sanders" />
+</head>
+<body id="home-page">
+	<vtex:template id="mobile-header-sanders" />
+	<div class="row">
+		<div class="banner">
+		    <div class="master-slider ms-skin-default" id="masterslider">
+		        <vtex:contentPlaceHolder id="mainFullBanner" />
+		    </div>
+		</div>
+	</div>
+	<main>
+		<div class="container">
+			<div class="row blc-recorrencia">
+				<!--<div class="col-lg-8 col-md-7 banner-recorrencia">-->
+				<!--	<h2>QUER RECEBER NOSSOS<br />PRODUTOS TODO MÊS?</h2>-->
+				<!--	<p>Faça parte do Clube Bem-estar TENA e receba os produtos que costuma comprar, sem precisar refazer ou renovar sua compra.</p>-->
+				<!--	<a href="/institucional/clube-tena" title="VEJA MAIS DETALHES" alt="VEJA MAIS DETALHES" class="veja-mais button verde">VEJA MAIS <br />DETALHES</a>-->
+				<!--	<vtex:contentPlaceHolder id="minibanner-recorrencia"/>-->
+				<!--</div>-->
+				<div class="col-md-6 col-md-offset-3 col-sm-offset-1 col-sm-10">
+					<div class="row">
+						<h2 class="news sprite-news azul">REGÍSTRATE AQUÍ</h2>
+						<p class="desc-news-home">Gana hasta un <strong>5% de descuento</strong> en tu próxima compra y recibe ofertas exclusivas.</p>
+					</div>
+					<div class="row">
+						<form action="" class="news-home">
+							<div class="row">
+								<input type="text" placeholder="Introduce tu dirección de e-mail aquí" required="required" class="email-news-home"/>
+							</div>
+							<div class="row">
+								<label for="">
+									<input type="checkbox" name="aceito" id="aceito"  required="required" value="aceito"/>
+									<span>Acepto los <a href="/Institucional/politica-de-privacidade" title="términos y condiciones de uso" alt="términos y condiciones de uso">términos y condiciones de uso</a>.</span>
+								</label>
+								<button>Enviar</button>
+							</div>
+						</form>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+		<section class="row geral-prateleiras">
+		    <div class="row bg-cinza produto-destaque-mb">
+		        <div class="row text-center">
+    				<h2 class="title-prateleira">PRODUCTOS DESTACADOS</h2>
+    				<h3>¿CUÁL ES EL TIPO DE PRODUCTO ADECUADO PARA MÍ?</h3>
+    			</div>
+    			<div class="container">
+                    <vtex:contentPlaceHolder id="prateleira-Destaque" />
+    			</div>
+		    </div>
+            <div class="row bg-cinza nivel-incontinencia-mb nivel-incontinencia">
+		        <div class="row text-center">
+    				<!--<h2 class="title-prateleira">ELIJE EL PRODUCTO ADECUADO A TU PERFIL</h2>
+    				
+    				<div class="slider-incontinencia" data-input="input[name='nivel']"></div>
+    				<div class="incontinencia-dropdown">
+                        <h3><a href="#">Escoge...</a></h3>
+                        <ul>
+                            <li>
+                                <a href="#" id="1"></a>
+                            </li>
+                            <li>
+                                <a href="#" id="2"></a>
+                            </li>
+                            <li>
+                                <a href="#" id="3"></a>
+                            </li>
+                            <li>
+                                <a href="#" id="4"></a>
+                            </li>
+                            <li>
+                                <a href="#" id="5"></a>
+                            </li>
+                            <li>
+                                <a href="#" id="6"></a>
+                            </li>
+                            <li>
+                                <a href="#" id="7"></a>
+                            </li>
+                            <li>
+                                <a href="#" id="8"></a>
+                            </li>
+                             <li>
+                                <a href="#" id="9"></a>
+                            </li>
+                             <li>
+                                <a href="#" id="10"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 class="legenda-nivel-incontinencia"> </h3>-->
+                    
+    			</div>
+    			<div class="container">
+    			    <vtex:contentPlaceHolder id="nivel-incontinencia"/>
+    			</div>
+		    </div>
+		    <div class="row area-video">
+		        <div class="container">
+		        <vtex:contentPlaceHolder id="area-institucional-home"/>
+		        </div>
+		    </div>
+		    <div class="row bg-cinza dia-dia-mb">
+		        <div class="row text-center">
+    				<h2 class="title-prateleira">IDEAL PARA TU DÍA A DÍA</h2>
+    			</div>
+    			<div class="container">
+    			    <vtex:contentPlaceHolder id="prateleira-dia-dia"/>
+    			</div>
+		   </div>
+		</section>
+	</main>
+    <vtex:template id="mobile-footer" />
+</body>
+</html>

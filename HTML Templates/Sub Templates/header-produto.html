@@ -1,0 +1,117 @@
+<div class="modal-chat" style="display:none;">
+    <div class="close-chat">X FECHAR</div>
+    <form class="form-chat" method="post" action="">
+        <p>Todos os campos são obrigatórios.</p>
+        <input type="text" placeholder="Nome" id="chat-nome" required="required"/>
+        <input type="email" placeholder="Email" id="chat-email" required="required"/>
+        <input type="text" placeholder="Telefone" id="chat-telefone" required="required"/>
+        <select id="chat-assunto" required="required">
+			<option value="informacao" selected="selected">Informação</option>
+		</select>
+        <button>ENTRAR</button>
+    </form>
+</div>
+<header data-spy="affix" data-offset-top="5" class="hidden-sm header-desktop">
+	<div class="container">
+		<div class="col-md-2 pull-left logo-header">
+			<a href="/" class="text-center">
+			    <svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 140.2 83.9" style="enable-background:new 0 0 140.2 83.9;" xml:space="preserve"><style type="text/css">header .st0{fill:#FFFFFF;}header .st1{fill:#009CDE;}header .st2{fill:#98BF13;}header .st3{fill:#005294;}</style><g><path class="st0" d="M131.9,27.2c-1.9-0.7-6-0.9-9.4-0.3c0.1-1,0.2-2,0.2-3c0-12.7-11.5-20.5-31.3-20.5c-24,0-51.4,12.3-68.7,27.8H7.1c-2.2,0-2.5,1.8-2.5,4c0,2.2,0.1,4.2,2.4,4.2h7.8C9,46.4,5.5,53.8,5.5,60.7c0,13.7,13.7,20.3,31,20.3c25,0,54.6-13.6,71.8-30.3c0.5-0.4,1.5-1.1,2.1,0c0,0,1.6,2.6,1.9,3.1c0.2,0.3,0.5,1,1.5,1.5c0.5,0.2,1.2,0.3,2.2,0.3c3.1,0,5.5,0,6.8,0c1.1,0,2.3-0.1,2.8-0.8c0.4-0.5,0.8-1.3-0.3-2.6c-0.8-0.9-5.7-6.8-8.3-10c-0.6-0.7-0.3-1.4-0.1-1.8c0.6-0.9,1.1-1.7,1.6-2.6c0.4-0.6,1.7-2.2,3.6-3.2c2.9-1.5,6.5-1.9,10.2-1.9c2.4,0.1,4.1-0.1,4.2-1.2C136.9,29.8,134.1,27.9,131.9,27.2"/><path class="st1" d="M32.3,29.3c0.3-0.2,0.5-0.4,0.8-0.5c0.3-0.2,0.5-0.4,0.8-0.5c13.8-8.9,33.5-17.6,55.8-17.6c13.2,0,26,5.1,26,14.3c0,0.8-0.1,1.6-0.2,2.3c-0.2,1.5-0.7,2.7-1.2,3.7c-0.4,0.9-0.8,1.6-1.1,2.2c-0.2,0.4-0.3,0.7-0.4,1c-0.1,0.4,0,0.7,0.2,0.9c0.5,0.5,1.1,0.6,1.7,0.6c1.6-0.2,3.6-1.9,6.2-3c2.2-0.9,4.7-1.6,7.8-1.8c1.8-0.1,2.9-0.1,4.3,0c0.2,0,0.4,0,0.5-0.1c0.1,0,0.2-0.1,0.3-0.2c0.1-0.1,0.2-0.3,0.2-0.5c0-0.2-0.1-0.3-0.3-0.5c-0.1-0.1-0.3-0.2-0.6-0.3c-0.1,0-0.2-0.1-0.3-0.1c-1-0.3-1.7-0.6-4.5-0.8c-2.2-0.1-5.2,0.5-6.8,0.9c-2.2,0.6-3.5,1.2-4.1,1.5c-0.2,0.1-0.3,0.1-0.4,0.1c-0.1,0,0.1-0.3,0.2-0.5c0.1-0.2,0.3-0.5,0.4-0.8c0.2-0.5,0.4-0.9,0.7-1.6c0.3-0.9,0.6-1.9,0.8-3.2c0.1-0.6,0.1-1.3,0.1-2c0-12-15-17-27.9-16.8c-18.2,0.3-42,8.5-58,19.9c-0.3,0.2-0.6,0.5-1,0.7c-0.3,0.2-0.6,0.4-0.9,0.7c-0.1,0.1-0.3,0.2-0.3,0.3c-0.2,0.2-0.4,0.4-0.5,0.6c-0.2,0.3-0.2,0.5-0.2,0.7c0,0.3,0.2,0.4,0.5,0.5c0.1,0,0.3,0.1,0.5,0C31.7,29.6,32,29.5,32.3,29.3"/><path class="st2" d="M11.2,50.3c-0.1,0.1-0.1,0.3-0.2,0.4c-0.1,0.3-0.2,0.5-0.3,0.8c-0.2,0.6-0.4,1.2-0.6,1.8c-0.7,2-1,3.9-1.2,5.7c-0.2,2.1,0,4,0.5,5.8c0.2,0.7,0.5,1.4,0.8,2C13.6,74.1,23.3,78,37.5,78c10.8,0,22.4-2.8,32.8-6.9c9.9-3.9,18.7-8.8,25.1-13.5c0.3-0.2,0.5-0.4,0.8-0.6c0.2-0.1,0.4-0.3,0.6-0.4c0.2-0.1,0.3-0.3,0.4-0.5c0.2-0.3,0.2-0.6,0.1-0.8c-0.1-0.2-0.2-0.4-0.5-0.4c-0.3-0.1-0.6,0-1.1,0.3c-0.2,0.1-0.4,0.3-0.6,0.4c-0.3,0.2-0.5,0.4-0.8,0.5c-6.4,4.4-15,8.7-24.3,12C60.2,71.6,49.6,74,39.9,74c-15.4,0-23.4-4.4-26.4-10.5c-0.3-0.6-0.5-1.3-0.7-1.8c-0.5-1.4-0.5-3-0.5-4.5c0-1.3,0.1-2.7,0.4-4.1c0.1-0.4,0.2-0.8,0.3-1.2c0-0.2,0.1-0.3,0.1-0.5c0-0.1,0-0.2,0.1-0.3c0.2-0.8,0.2-1.3,0-1.7c-0.1-0.3-0.4-0.5-0.7-0.5c-0.3,0-0.7,0.2-1,0.6C11.5,49.7,11.3,50,11.2,50.3"/><path class="st3" d="M115.4,53.5h8.3c-5.7-6.1-14.4-17.7-16.5-19.9h-2.9c-2.2,2.9-12.8,15.3-16.5,19.9h5.6c0.9-1.1,2.5-3.2,4.2-5.5l14,0C113.4,50.4,114.8,52.4,115.4,53.5 M100.2,44.8c2.4-3.1,4.5-5.7,4.5-5.7c1.6,1.7,3.2,3.8,4.6,5.7H100.2z M82.9,33.5c0.3,1.3,0.5,4.5,0.6,7.6c0,1.7,0.1,3.4,0.1,4.8c-4.5-2.8-15.7-11.1-18.8-12.4h-3.1c0,0,0.2,1.8,0.2,6.9c0,1.6-0.1,5.5-0.1,6.7c-0.2,4.1-1,6.3-1,6.3h1.9h3.8c0,0-0.5-2.1-0.7-6.3c-0.1-1.7-0.1-3.8,0-6.2c4.8,2.8,10.9,7,14.7,9.6c2.4,1.7,3.4,2.5,3.8,2.9h3.2c0,0,0-2-0.1-4.7c0-1.6,0-6,0-7.8c0-4.5,0.9-7.4,0.9-7.4H82.9z M57.8,49.8c-2.9,0.3-9.8,0.4-14.6,0.4c-0.1-1.2,0-4.8,0-5.4c2.7,0,10,0.1,13.2,0.3v-3.8c-2.8,0.2-8,0.3-13.2,0.3c-0.1-1.2,0-4,0.1-4.7c4.5,0,8.8,0.1,11.6,0.2l2.7,0.1v-3.7c-3.4,0.1-7.3,0.2-10.1,0.2c-2.7,0-11.1-0.1-11.1-0.1s0.5,5.6,0.5,7.8v4.4c0,2.2-0.5,7.9-0.5,7.9c0,0,8.5-0.2,11.2-0.2c2.8,0,6.8,0.1,10.2,0.2V49.8z M23.1,37.1c3.5,0,7.6,0.2,11.1,0.3v-3.9c-5.9,0.1-10.1,0.1-14,0.1c-3.9,0-8.8,0-13.7-0.1v3.9c2.4-0.2,6.9-0.3,10.4-0.3c0,0,0.1,5,0.1,9.8c0,2.2-0.3,5-0.5,6.6h7c-0.2-2-0.5-4.4-0.5-6.6C23,43,23.1,37.1,23.1,37.1z"/><path class="st3" d="M108.3,55c-1.3,0-2.3,1-2.3,2.3c0,1.3,1.1,2.3,2.3,2.3c1.3,0,2.3-1,2.3-2.3C110.7,56,109.6,55,108.3,55 M108.3,59.2c-1,0-1.8-0.8-1.8-1.9c0-1.1,0.8-1.9,1.8-1.9c1,0,1.8,0.8,1.8,1.9C110.1,58.4,109.3,59.2,108.3,59.2z M108.7,57.6c0.4-0.1,0.6-0.4,0.6-0.8c0-0.6-0.3-0.8-1-0.8h-1.1v2.8h0.6v-1.1h0.3l0.7,1.1h0.7L108.7,57.6z M107.8,56.5h0.4c0.4,0,0.5,0.1,0.5,0.3c0,0.3-0.1,0.3-0.5,0.3h-0.4V56.5z"/></g></svg>
+			    <!--<img src="/arquivos/logo.png" alt="Tena" title="Tena"/>-->
+			    
+			</a>
+		</div>
+		<div class="col-md-10">
+			<div class="row toplinks-sobre">
+				<div class="col-lg-6 col-md-7 pull-left links-sobre">
+					<ul>
+					    <li><a href="http://www.tena.com.mx/sobre-la-tena" title="ACERCA TENA" alt="SOBRE TENA" target="_blank">ACERCA TENA</a></li>
+						<li><a href="http://www.tena.com.mx/incontinencia" title="SOBRE INCONTINENCIA" alt="SOBRE INCONTINENCIA" target="_blank">Sobre incontinencia </a></li>
+						<li><a href="/Institucional/perguntas-frecuentes" title="ATENCIÓN AL CLIENTE" alt="ATENCIÓN AL CLIENTE">Atención al cliente</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-offset-3 col-md-offset-1 col-lg-3 col-md-4 pull-left links-atendimento">
+					<ul>
+						<!--<li><a href="http://www.tena.com.br/contato" title="Atendimento" alt="Atendimento" target="_blank">Atendimento</a></li>-->
+						<li><a href="/Site/MeusPedidos.aspx" title="MIS PEDIDOS" alt="MIS PEDIDOS">mis pedidos</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-7 pull-left">
+					<nav class="menu">
+						<ul>
+							<li><a href="/mujeres" title="mujeres" alt="mujeres">Mujeres</a></li>
+							<li><a href="/hombres" title="hombres" alt="hombres">Hombres</a></li>
+							<li><a href="/cuidadores-familiares" title="cuidadores-familiares" alt="cuidadores-familiares">Cuidadores familiares</a></li>
+							<li><a href="/cuidadores-profesionales" title="cuidadores-profesionales" alt="cuidadores-profesionales">Cuidadores profesionales</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-md-4 search">
+					<vtex.cmc:fullTextSearchBox/>
+				</div>
+				<div class="col-md-1 carrinho">
+				    <a href="/checkout/#/cart" class="sprite-ico_carrinho">
+            			<vtex.cmc:AmountItemsInCart/>
+            			<vtex.cmc:miniCart/>
+            		</a>
+				</div>
+			</div>
+		</div>
+		<div class="row blc-news-header">
+			<div class="col-lg-4 col-md-6 pull-right news-header">
+				<div class="pull-right sprite-newsletter-header"></div>
+				<div class="pull-right texto-news-header">
+					<p><strong>Registra tu e-mail  </strong>Recibe actualizaciones y descuentos en tu próxima compra</p>
+				</div>
+				<div class="sprite-close-news-header fecha-news"></div>
+				<form class="news-header-form" action="">
+					<div class="row">
+						<input type="text" placeholder="Introduce tu dirección de e-mail aquí..." required="required" class="email-news-header"/>
+						<button>Enviar</button>
+					</div>
+					<div class="row">
+						<label for="">
+							<input type="checkbox" name="aceito" id="aceito"  required="required" value="aceito" />
+							<span>Acepto los <a href="/Institucional/politica-de-privacidade" title="términos y condiciones de uso." alt="términos y condiciones de uso.">términos y condiciones de uso.</a></span>
+						</label>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</header>
+<header class="hidden-lg header-mobile visible-sm-block">
+	<div class="row">
+		<div class="col-sm-2 btn-menu-mobile pull-left">
+		</div>
+		<div class="menu-mobile">
+				<div class="close-menu-mobile"></div>
+				<ul>
+					<li><a href="/mulheres" title="mulheres" alt="mulheres">mujeres</a></li>
+					<li><a href="/homens" title="homens" alt="homens">hombres</a></li>
+					<li><a href="/cuidadores" title="cuidadores" alt="cuidadores">cuidadores</a></li>
+					<li><a href="/profissionais" title="profissionais" alt="profissionais">profesionales</a></li>
+					<li class="mn-atendimneto"><a href="/Institucional/faq" title="CENTRAL DE ATENDIMENTO" alt="CENTRAL DE ATENDIMENTO">ATENCIÓN AL CLIENTE</a></li>
+					<li class="mn-pedidos"><a href="/Site/MeusPedidos.aspx" title="Meus pedidos" alt="Meus pedidos">Meus pedidos</a></li>
+					<li><a href="http://www.tena.com.br/sobre-a-tena" title="SOBRE TENA" alt="SOBRE TENA" target="_blank">SOBRE TENA</a></li>
+					<li><a href="http://www.tena.com.br/incontinencia" title="SOBRE LOS ESCAPES DE ORINA" alt="SOBRE LOS ESCAPES DE ORINA" target="_blank">SOBRE LOS ESCAPES DE ORINA</a></li>
+				</ul>
+			</div>
+			
+			
+		<div class="col-sm-4 col-sm-offset-3 logo-mobile">
+				<a href="/"><img src="/arquivos/logo.png" alt="Tena" title="Tena" /></a>
+		</div>
+		<div class="col-sm-2 carrinho-mobile pull-right">
+			<a href="/checkout/#/cart" class="btn-carrinho"></a>
+		</div>
+	</div>
+	<div class="row bg-cinza">
+		<div class="col-sm-12 search-mobile">
+			<div class="text-center">
+				<vtex.cmc:fullTextSearchBox/>
+			</div>
+		</div>
+	</div>
+</header>

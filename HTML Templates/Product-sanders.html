@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+<head>
+<vtex:template id="scripts-header-vinneren" />
+<!--<vtex:template id="head-sanders" />-->
+</head>
+<body id="produto">
+<div class="comprar-flutuante" style="display:none;">
+    <div class="container">
+        <ul>
+            <li class="img"></li>
+            <li class="titulo"><vtex.cmc:productName/></li>
+            <li class="preco"><vtex.cmc:skuPrice/></li>
+            <li class="quantidade"><em class="numeral"></em><p>Cantidad de paquetes<vtex.cmc:BuyInPage/></p></li>
+            <li class="quantidade sku"><em class="numeral"></em><p><vtex.cmc:skuSelection /></p></li>
+            <li class="btn"><em class="numeral"></em><vtex.cmc:BuyButton/></li>
+        </ul>
+    </div>
+</div>
+    <vtex:template id="header-produto" />
+    <div class="row">
+        <div class="banner">        
+            <div class="box-banner"></div>
+        </div>
+    </div>
+    <main class="container">
+        <div class="row">
+            <div class="col-md-7 imagem_prod">
+                <vtex.cmc:ProductImage zoom="off"/>
+            </div>
+
+            <div class="col-md-5 descricao_prod">
+                <h1 class="nome_prod row">
+                    <vtex.cmc:productName/>
+                </h1>
+
+                <div class="desc_prod row">
+                    <vtex.cmc:productDescriptionShort />
+                </div>
+
+                <!-- <div class="avalia_prod row">
+                   <vtex.cmc:evaluationRate/>
+                   <span class="avalie_prod">Avalie</span>                    
+                </div> -->
+
+                <div class="preco_prod row">
+                   <vtex.cmc:skuPrice/>                    
+                </div>
+
+                <div class="quatidade_prod row">
+                    <p class="number-legenda"></p>
+                    <div class="quantidade-legenda">
+                        <p>Cantidad de paquetes</p>
+                        <vtex.cmc:BuyInPage/>                     
+                    </div>
+                </div>
+                <div class="sugestoes_prod row">
+                    <p class="number-legenda"></p>
+                    <div class="sugestoes-legenda">
+                        <p></p>
+                        <vtex.cmc:skuSelection />
+                    </div>
+                </div>
+                <div class="botao_prod row">
+                <p class="number-legenda"></p>
+                   <vtex.cmc:BuyButton/>                    
+                </div>
+                <vtex.cmc:HightLight/>
+            </div>
+        </div>
+</main>
+<div class="row" id="descricao_prod">
+
+    <div class="col-md-12">
+        <h2 class="h2_prod">CARACTERÍSTICAS Y BENEFICIOS</h2>
+        <div class="row">
+            <vtex.cmc:productSpecification/>  
+            <div id="especificacoes_produto">
+                <ul class="container">
+                    <li class="col-md-3 absorcao-content col-sm-6">    
+                        <h4>ABSORCIÓN:</h4>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </li>
+                    <li class="col-md-3 incontinencia-content col-sm-6">
+                        <h4>NIVEL DE ABSORCIÓN:</h4>
+                       
+                    </li>
+                    <li class="col-md-3 mobilidade-content col-sm-6">
+                        <h4>MOVILIDAD:</h4>
+                        
+                    </li>
+                    <li class="col-md-3 genero-content col-sm-6">
+                        <h4>INDICADO PARA:</h4>
+                        <div class="selo">
+                            <vtex.cmc:HightLight/>
+                            <vtex.cmc:discountHightLight/>
+                        </div>
+                    </li>
+                </ul>
+                <div class="bg-cinza row">
+                    <div class="container">
+                        <div class="descricao_interna  col-md-6">
+                        
+                        </div>
+                        <div class="video_interna col-md-6">
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                <!--<div class="selo-amostra">-->
+                <!--    <div class="container">-->
+                <!--        <div class="area-amostra col-lg-6 col-sm-12">-->
+                            
+                <!--        </div>-->
+                <!--        <div class="area-selos col-lg-6 col-sm-12">-->
+                            
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row" id="prod_relacionados">
+        <div class="col-md-12">
+            <h2 class="h2_prod">PRODUCTOS RELACIONADOS</h2>
+            <div class="row">
+                <vtex:contentPlaceHolder id="Similares" />
+            </div>
+        </div>
+    </div>
+</div>
+    <vtex:template id="footer-sanders" />
+    <style>
+    em.economia-de {
+        font-size: 0;
+    }
+    em.economia-de:before{
+        content: 'Ahorro de ';
+        font-size: 12px;
+    }
+    em.economia-de span{
+        font-size: 12px;
+    }
+    </style>
+</body>
+</html>

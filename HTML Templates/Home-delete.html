@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+<!-- Vinneren
+Vinneren oct-18
+241018 Separación de código
+261018 Integración de canvasmponente de youtube lite
+ -->
+<head>
+	<vtex:template id="scripts-header-vinneren" />
+</head>
+
+<body id="home-page">
+	<vtex:template id="header-sanders" />
+	<div class="row">
+		<div class="banner">
+			<div class="master-slider ms-skin-default" id="masterslider">
+				<vtex:contentPlaceHolder id="mainFullBanner" />
+
+			</div>
+		</div>
+	</div>
+	<main>
+		<div class="row line-tipbar">
+			<div class="tipbar">
+				<vtex:contentPlaceHolder id="tipbar" />
+			</div>
+		</div>
+		<div class="container">
+			<div class="row blc-recorrencia">
+				<div class="col-lg-8 col-md-7 banner-recorrencia">
+					<h2>¿Quieres recibir nuestros <br /> productos todos los meses?</h2>
+					<p>Suscríbete al club TENA y recibe tus productos cada mes sin necesidad de rehacer tu compra.</p>
+					<a href="/institucional/club-tena" title="CONOCE MÁS DETALLES AQUÍ" alt="CONOCE MÁS DETALLES AQUÍ" class="veja-mais button verde">CONOCE MÁS DETALLES AQUÍ</a>
+					<vtex:contentPlaceHolder id="minibanner-recorrencia" />
+				</div>
+				<div class="col-lg-4 col-md-4 col-md-offset-1 col-lg-offset-0">
+					<div class="row">
+						<h2 class="news sprite-news azul">REGÍSTRATE AQUÍ</h2>
+						<p>Regístrate a nuestro Newsletter y obtén hasta un<strong> 5% de descuento</strong> en tu primera compra y recibe ofertas exclusivas.</p>
+					</div>
+					<div class="row">
+						<form method="post" action="http://www.pages05.net/essity/Newsletter-BrandSite/Form" pageId="14113663" siteId="661411" parentPageId="14113661" class="news-home">
+							<div class="row">
+								<input type="text" name="Email" id="control_EMAIL" placeholder="Introduce tu dirección de e-mail aquí" required="required" class="email-news-home" />
+								<button>Enviar</button>
+							</div>
+							<div class="row">
+								<label for="">
+									<input type="checkbox" name="aceito" id="aceito" required="required" value="aceito" />
+									<span>Al enviar tus datos estás de acuerdo con nuestro <a href="/Institucional/politica-de-privacidade" title="Aviso de Privacidad" alt="Aviso de Privacidad">Aviso de Privacidad</a>.</span>
+								</label>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="row geral-prateleiras">
+			<div class="row bg-cinza produto-destaque">
+				<div class="row text-center">
+					<h2 class="title-prateleira">PRODUCTOS DESTACADOS</h2>
+					<h3>¿CUÁL ES EL TIPO DE PRODUCTO ADECUADO PARA MÍ?</h3>
+				</div>
+				<div class="container">
+					<div id="tabs">
+						<ul>
+							<li>
+								<a href="#prateleira-1" class="base sprite-roupa_intima">
+									<span class="ball">
+										<img src="" alt="" />
+									</span>
+									<p class="text-center">
+										Ropa Interior Desechable
+									</p>
+								</a>
+							</li>
+							<li>
+								<a href="#prateleira-2" class="base sprite-absorvente_incontinencia">
+									<span class="ball">
+										<img src="" alt="" />
+									</span>
+									<p class="text-center">
+										Toallas y Pantyprotectores
+									</p>
+								</a>
+							</li>
+
+							<li>
+								<a href="#prateleira-3" class="base sprite-absorvente_masculino">
+									<span class="ball">
+										<img src="" alt="" />
+									</span>
+									<p class="text-center">
+										Protector Masculino
+									</p>
+								</a>
+							</li>
+
+							<li>
+								<a href="#prateleira-4" class="base sprite-fraldas_geriatricas">
+									<span class="ball">
+										<img src="" alt="" />
+									</span>
+									<p class="text-center">
+										Protectores Anatómicos
+									</p>
+								</a>
+							</li>
+							<li>
+								<a href="#prateleira-5" class="base sprite-absorvente_geriatrico">
+									<span class="ball">
+										<img src="" alt="" />
+									</span>
+									<p class="text-center">
+										Protector de Superficies
+									</p>
+								</a>
+							</li>
+							<li>
+								<a href="#prateleira-6" class="base sprite-toalhas_umedecidas">
+									<span class="ball">
+										<img src="" alt="" />
+									</span>
+									<p class="text-center">
+										Toallas húmedas
+									</p>
+								</a>
+							</li>
+						</ul>
+						<div class="row">
+							<div id="prateleira-1">
+								<vtex:contentPlaceHolder id="prateleira-1" />
+							</div>
+							<div id="prateleira-2">
+								<vtex:contentPlaceHolder id="prateleira-2" />
+							</div>
+							<div id="prateleira-3">
+								<vtex:contentPlaceHolder id="prateleira-3" />
+							</div>
+							<div id="prateleira-4">
+								<vtex:contentPlaceHolder id="prateleira-4" />
+							</div>
+							<div id="prateleira-5">
+								<vtex:contentPlaceHolder id="prateleira-5" />
+							</div>
+							<div id="prateleira-6">
+								<vtex:contentPlaceHolder id="prateleira-6" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row produto-perfil">
+				<div class="row text-center">
+					<h2 class="title-prateleira">ELIGE EL PRODUCTO ADECUADO A TU PERFIL</h2>
+				</div>
+				<div class="container">
+					<vtex:contentPlaceHolder id="produto-perfil" />
+				</div>
+			</div>
+			<div class="row bg-cinza nivel-incontinencia">
+				<div class="row text-center">
+					<!--<h2 class="title-prateleira">ELIGE EL NIVEL DE ABSORCIÓN QUE NECESITAS</h2>-->
+					<!--<div class="slider-incontinencia" data-input="input[name='nivel']"></div>-->
+
+
+					<!--<h3 class="legenda-nivel-incontinencia">Ligera</h3>-->
+				</div>
+				<div class="container">
+					<vtex:contentPlaceHolder id="nivel-incontinencia" />
+				</div>
+			</div>
+			<div class="row area-video">
+				<div class="container">
+					<vtex:contentPlaceHolder id="area-institucional-home" />
+				</div>
+			</div>
+			<div class="row bg-cinza dia-dia">
+				<div class="row text-center">
+					<h2 class="title-prateleira">IDEAL PARA TU DÍA A DÍA</h2>
+				</div>
+				<div class="container">
+					<vtex:contentPlaceHolder id="prateleira-dia-dia" />
+				</div>
+			</div>
+			<div class="row bg-cinza banner-produto-footer">
+				<vtex:contentPlaceHolder id="banner-produto-footer" />
+			</div>
+
+		</section>
+	</main>
+	<vtex:template id="footer-sanders" />
+</body>
+
+</html>

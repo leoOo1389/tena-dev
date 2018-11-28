@@ -1,0 +1,97 @@
+#set($id = $product.Id)
+#set($uri = $product.Uri)
+#set($departamento = $product.DepartmentName)
+#set($nome_do_produto = $product.HtmlEscapedName)
+#set($destaque = $product.HightLight)
+
+<div class="row $departamento sku-data produto-$id" data-id="$id" >
+	<a href="$uri" title="$nome_do_produto" target="_top">
+		<div class="dados-produto">
+    		<div class="image row">
+    			$product.GetImageTag(200,200)
+    		    <div class="selo">
+                    $product.HightLight
+                    $product.DiscountHightLight
+                </div>
+            </div>
+		
+		
+    		<div class="row text-center title-descricao">
+    			<h2 class="row title">$nome_do_produto</h2>
+    			<!-- div class="row descricao-curta">$product.DescriptionShort</div -->
+    			
+    			<!--<div class="row descricao-curta">Com protetor ajustável</div>-->
+    		</div>
+    	</div>
+
+		<div class="row descricao">
+			<span>$product.ProductField(34)</span>
+			<em class="sprite-casal"></em>
+		</div>
+
+		<div class="row especificacoes">
+			<p class="lbl lbl-incontinencia">NIVEL DE ABSORCIÓN:</p>
+			<p class="txt">$product.ProductField(30)</p>
+
+			<p class="lbl lbl-absorcao">ABSORCIÓN:</p>
+			<!--<span class="sprite-gotas"></span>-->
+			<div class="nivel-prateleira">
+			    $product.ProductField(28)
+			</div>
+			<ul class="gotas-prateleira">
+			    <li></li>
+			    <li></li>
+			    <li></li>
+			    <li></li>
+			    <li></li>
+			    <li></li>
+			    <li></li>
+			    <li></li>
+			    <li></li>
+			    <li></li>
+			    <li></li>
+			    <li></li>
+			    <li></li>
+			    <li></li>
+			</ul>
+		</div>
+
+		<!-- div class="row preco">
+			<p class="valor-de full">
+				DE: <em>R$ 110,00</em>
+			</p>
+			
+			<p class="valor-por full">
+				<span class="parcelado">POR 10X de: <strong>R$ 9,99</strong></span>
+				<span class="valor-cheio">OU À VISTA DE <strong>R$ 99,9</strong></span>
+			</p>
+		</div -->
+		
+		<div class="row preco">
+			#if ($product.IsInStock)
+				#if ($product.HasBestPrice)
+					<p class="valor-de full">
+						DE: <em>$product.ListPrice</em>
+					</p>
+				#end
+				<p class="valor-por full">
+
+					#if ($product.NumbersOfInstallment > 1)
+						<span class="parcelado">POR ${product.NumbersOfInstallment}x de: <strong>$product.InstallmentValue</strong></span>
+						<span class="valor-cheio">OU À VISTA DE <strong>$product.BestPrice</strong></span>
+					#else
+						<span class="valor-cheio-completo">POR:<strong>$product.BestPrice</strong></span>
+					#end
+				</p>
+			#else
+                <div class="produto_esgostado">
+					PRODUTO ESGOTADO
+				</div>
+			#end
+		</div>
+
+		<div class="btn_comprar">
+			<span></span>
+		</div>
+	</a>
+</div>

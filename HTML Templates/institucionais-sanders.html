@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+<head>
+<vtex:template id="head-sanders" />
+</head>
+<body>
+    <div class="modal-form-contato" style="display:none;">
+        <div class="close-form-contato">X CERRAR</div>
+        <form class="form-contato" method="post" action="">
+            <p>LLENA CON TUS DATOS Y EN BREVE TE CONTACTAREMOS</p>
+            <div class="campos-left">
+                <input type="text" name="CliNom" placeholder="Nombre" id="contato-nome" required="required"/>
+                <input type="text" name="CliApat" placeholder="Apellido Paterno" id="contato-nome" required="required"/>
+                <input type="email" name="CliMail" placeholder="Email" id="contato-email" required="required"/>
+                <input type="text" name="CliTel" placeholder="Teléfono" id="contato-telefone" required="required"/>
+                <p>
+                    <input type="checkbox" id="TC" name="TC"></input>
+                    <label for="TC">He leído y acepto los términos y condiciones del aviso de privacidad.</label>
+                </p>
+            </div>
+            <div class="campos-right">
+                <textarea id="contato-mensagem" name="Comentarios" placeholder="Mensaje" required="required"></textarea>
+            </div>
+            <button>ENVIAR MENSAJE</button>
+        </form>
+        
+    </div>
+	<vtex:template id="header-sanders" />
+	<div class="row">
+		<div class="banner">		
+	        <vtex:contentPlaceHolder id="mainFullBanner" />
+	        <div class="container texto-banner">
+	        	 <vtex:contentPlaceHolder id="textobanner" />
+	        </div>
+		</div>
+	</div>
+	<main>
+
+        <nav class="row links-institucionais">
+            <ul class="container">
+            	<li><a href="/Institucional/preguntas-frecuentes">Perguntas frecuentes</a></li>
+            	<li><a href="/Account/Orders">MIS PEDIDOS</a></li>
+            	<!--<li><a href="/Account/">MEUS DADOS</a></li>-->
+            	<li><a href="/Institucional/politica-de-entrega">POLÍTICA DE ENTREGA</a></li>
+            	<li><a href="/Institucional/politica-de-devolucion">POLÍTICA DE DEVOLUCIÓN</a></li>
+            	<li><a href="/Institucional/aviso-de-privacidad">AVISO DE PRIVACIDAD</a></li>
+                <li><a href="/Institucional/politica-de-pago">POLÍTICA DE PAGO</a></li>
+                <!--<li><a href="/institucional/clube-tena">CLUBE BEM-ESTAR TENA</a></li>-->
+            </ul>
+        </nav>
+        <div class="row content">
+        	<div class="container">
+        		<div class="col-md-8 conteudo-interna">
+        			<vtex:contentPlaceHolder id="conteudo-institucional"/>
+        		</div>
+        		<aside class="col-md-4 sidebar-atendimento">
+        			<h3>¿NO ENCONTRASTE LO QUE BUSCABAS?</h3>
+        			<p class="sprite-fone-atendimento">ATENCIÓN AL CLIENTE<strong>01-800-522-5050</strong><span>Horarios de Atención:<br/>De Lunes a Viernes de 8am a 9pm<br/>Sábados de 8am a 2pm</span></p>
+        			<p class="sprite-email-atendimento">EMAIL DE CONTACTO<a href="mailto:atenciontena@hi-marketing.com">atenciontena@hi-marketing.com</a></p>
+        			<a href="#" class="sprite-btn-formcontato">LLENA NUESTRO<br/> FORMULARIO DE CONTACTO</a>
+        		</aside>	
+        	</div>
+        </div>
+	</main>
+    <vtex:template id="footer-sanders" />
+</body>
+</html>

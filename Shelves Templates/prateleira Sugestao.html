@@ -1,0 +1,12 @@
+#set($id = $product.Id)
+#set($uri = $product.Uri)
+#set($departamento = $product.DepartmentName)
+#set($nome_do_produto = $product.HtmlEscapedName)
+#set($destaque = $product.HightLight)
+
+<div class="sugestao ball $departamento sku-data produto-$id" data-id="$id" >
+	<a href="$uri" title="$nome_do_produto" target="_top">
+	    <h2 class="row title">$nome_do_produto</h2>
+    	$product.GetImageTag(50,50)
+	</a>
+</div>
